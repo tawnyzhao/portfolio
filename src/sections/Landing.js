@@ -48,7 +48,8 @@ const LandingPage = () => (
         query SiteTitleQuery {
           contentfulAbout {
             name
-            roles
+            description
+            activities
             socialLinks {
               id
               url
@@ -64,7 +65,7 @@ const LandingPage = () => (
         }
       `}
       render={({ contentfulAbout, site }) => {
-        const { name, socialLinks, roles } = contentfulAbout;
+        const { name, socialLinks, description, activities } = contentfulAbout;
         const { deterministicBehaviour } = site.siteMetadata;
 
         return (
@@ -74,25 +75,34 @@ const LandingPage = () => (
               as="h1"
               color="primary"
               fontSize={[6, 7]}
-              mb={[3, 4, 5]}
+              mb={[3, 4]}
             >
               {`Hello, I'm ${name}!`}
             </Heading>
-
             <Heading
+              textAlign="center"
               as="h2"
               color="primary"
-              fontSize={[5, 6]}
+              fontSize={[4, 5]}
+              mb={[2, 3]}
+            >
+              {`${description}`}
+            </Heading>
+            <Heading
+              as="h3"
+              color="primary"
+              fontSize={[5]}
               mb={[3, 5]}
-              textAlign="center"
+              textAlign="ceFnter"
               style={centerHorizontally}
             >
+              {`I love `}
               <TextLoop interval={5000}>
-                {roles
+                {activities
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
                   .map((text) => (
-                    <Text width={[300, 500]} key={text}>
-                      {text}
+                    <Text key={text}>
+                      {`${text}`}
                     </Text>
                   ))}
               </TextLoop>
