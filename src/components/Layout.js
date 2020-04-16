@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box; 
     margin: 0;
     font-family: Cabin, 'Open Sans', sans-serif;
+    background-color: ${colors.background};
+    overflow-x: hidden;
+  }
+  html {
     overflow-x: hidden;
   }
 `;
