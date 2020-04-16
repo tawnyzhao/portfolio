@@ -93,7 +93,7 @@ const LandingPage = () => (
               color="primary"
               fontSize={[5]}
               mb={[3, 5]}
-              textAlign="ceFnter"
+              textAlign="center"
               style={centerHorizontally}
             >
               {`I love `}
