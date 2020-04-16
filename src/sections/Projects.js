@@ -140,13 +140,17 @@ const Project = ({
                 url={repositoryUrl}
               />
             </Box>
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="See project"
-                fontAwesomeIcon="globe"
-                url={projectUrl}
-              />
-            </Box>
+            {projectUrl ? (
+              <Box mx={1} fontSize={5}>
+                <SocialLink
+                  name="See project"
+                  fontAwesomeIcon="globe"
+                  url={projectUrl}
+                />
+              </Box>
+            ) : (
+              <div />
+            )}
           </Flex>
           <ImageSubtitle bg="primary" color="white" y="bottom" x="right" round>
             {type}
