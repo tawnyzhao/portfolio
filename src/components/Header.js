@@ -51,7 +51,7 @@ const Header = () => (
             const homeLink = home && (
               <Image
                 src={Logo}
-                width="50px"
+                width="150px"
                 alt="Portfolio Logo"
                 onClick={home.onClick}
                 style={{
@@ -70,7 +70,7 @@ const Header = () => (
 
             return (
               <Fragment>
-                {/* {homeLink} */}
+                {homeLink}
                 <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
               </Fragment>
             );
