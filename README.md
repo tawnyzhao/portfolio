@@ -9,7 +9,7 @@
 My personal website where I write about some of the stuff I've worked on 😊. 
 Check it out [here](https://tonyzhao.tech/)
 
-Based on Gatsby Mate. Deployed on Netlify.
+Based on [Gatsby Mate](https://github.com/EmaSuriano/gatsby-starter-mate/). Deployed on Netlify.
 
 ## License
 
