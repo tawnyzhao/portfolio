@@ -11,12 +11,12 @@ import ParticleBG from '../components/ParticlesBG';
 
 const Background = () => (
   <div>
-    <Triangle
+    {/* <Triangle
       color="secondaryLight"
       height={['50vh', '20vh']}
       width={['50vw', '50vw']}
       invertY
-    />
+    /> */}
 
     <Triangle
       color="primaryDark"
