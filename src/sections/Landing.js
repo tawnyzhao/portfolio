@@ -7,6 +7,7 @@ import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
+import ParticleBG from '../components/ParticlesBG';
 
 const Background = () => (
   <div>
@@ -36,6 +37,7 @@ const Background = () => (
       invertX
       invertY
     />
+    <ParticleBG />
   </div>
 );
 

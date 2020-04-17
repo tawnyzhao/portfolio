@@ -10,6 +10,7 @@ import SocialLink from '../components/SocialLink';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
 import Hide from '../components/Hide';
+import ParticleBG from '../components/ParticlesBG';
 
 const Background = () => (
   <div>
@@ -41,6 +42,7 @@ const Background = () => (
       width={['100vw', '100vw']}
       invertY
     />
+    <ParticleBG />
   </div>
 );
 
