@@ -7,14 +7,15 @@ import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
+import ParticleBG from '../components/ParticlesBG';
 
 const Background = () => (
   <div>
-    <Triangle
+    {/* <Triangle
       color="backgroundDark"
       height={['35vh', '80vh']}
       width={['95vw', '60vw']}
-    />
+    /> */}
 
     <Triangle
       color="secondary"
@@ -36,6 +37,7 @@ const Background = () => (
       invertX
       invertY
     />
+    <ParticleBG />
   </div>
 );
 
@@ -101,9 +103,7 @@ const LandingPage = () => (
                 {activities
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
                   .map((text) => (
-                    <Text key={text}>
-                      {`${text}`}
-                    </Text>
+                    <Text key={text}>{`${text}`}</Text>
                   ))}
               </TextLoop>
             </Heading>
