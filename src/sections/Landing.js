@@ -101,9 +101,7 @@ const LandingPage = () => (
                 {activities
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
                   .map((text) => (
-                    <Text key={text}>
-                      {`${text}`}
-                    </Text>
+                    <Text key={text}>{`${text}`}</Text>
                   ))}
               </TextLoop>
             </Heading>
