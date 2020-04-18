@@ -20,13 +20,17 @@ const Background = () => (
       width={['100vw', '100vw']}
       invertX
     /> */}
-
-    {/* <Triangle
-      color="background"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
+    <Triangle
+      color="primary"
+      height={['15vh', '25vh']}
+      width={['75vw', '70vw']}
+    />
+    <Triangle
+      color="backgroundDark"
+      height={['25vh', '20vh']}
+      width={['100vw', '100vw']}
       invertX
-    /> */}
+    />
 
     <Triangle
       color="primaryDark"
