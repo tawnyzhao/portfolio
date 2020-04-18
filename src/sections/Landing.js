@@ -75,7 +75,7 @@ const LandingPage = () => (
             <Heading
               textAlign="center"
               as="h1"
-              color="primary"
+              color="text"
               fontSize={[6, 7]}
               mb={[3, 4]}
             >
@@ -84,7 +84,7 @@ const LandingPage = () => (
             <Heading
               textAlign="center"
               as="h2"
-              color="primary"
+              color="text"
               fontSize={[4, 5]}
               mb={[2, 3]}
             >
@@ -92,7 +92,7 @@ const LandingPage = () => (
             </Heading>
             <Heading
               as="h3"
-              color="primary"
+              color="text"
               fontSize={[5]}
               mb={[3, 5]}
               textAlign="center"
@@ -111,7 +111,7 @@ const LandingPage = () => (
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
               {socialLinks.map(({ id, ...rest }) => (
                 <Box mx={3} fontSize={[5, 6, 6]} key={id}>
-                  <SocialLink {...rest} />
+                  <SocialLink color="text" {...rest} />
                 </Box>
               ))}
             </Flex>
