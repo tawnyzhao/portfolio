@@ -114,8 +114,8 @@ const Project = ({
   publishedDate,
   logo,
 }) => (
-  <Card p={0}>
-    <Flex style={{ height: CARD_HEIGHT }}>
+  <Card style={{ borderRadius: '15px' }} p={0}>
+    <Flex bg="secondary" style={{ height: CARD_HEIGHT, borderRadius: '10px' }}>
       <TextContainer>
         <span>
           <Title my={2} pb={1} color="text">
