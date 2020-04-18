@@ -10,10 +10,10 @@ const ParticleBG = () => (
     params={{
       particles: {
         number: {
-          value: 50,
+          value: 40,
           density: {
             enable: true,
-            value_area: 350,
+            value_area: 550,
           },
         },
         color: {
