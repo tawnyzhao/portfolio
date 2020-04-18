@@ -20,13 +20,17 @@ const Background = () => (
       width={['100vw', '100vw']}
       invertX
     /> */}
-
-    {/* <Triangle
-      color="background"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
+    <Triangle
+      color="primary"
+      height={['15vh', '25vh']}
+      width={['75vw', '70vw']}
+    />
+    <Triangle
+      color="backgroundDark"
+      height={['25vh', '20vh']}
+      width={['100vw', '100vw']}
       invertX
-    /> */}
+    />
 
     <Triangle
       color="primaryDark"
@@ -114,8 +118,8 @@ const Project = ({
   publishedDate,
   logo,
 }) => (
-  <Card p={0}>
-    <Flex style={{ height: CARD_HEIGHT }}>
+  <Card style={{ borderRadius: '15px' }} p={0}>
+    <Flex bg="secondary" style={{ height: CARD_HEIGHT, borderRadius: '10px' }}>
       <TextContainer>
         <span>
           <Title my={2} pb={1} color="text">

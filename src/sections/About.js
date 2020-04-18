@@ -30,6 +30,12 @@ const Background = () => (
       height={['25vh', '20vh']}
       width={['100vw', '100vw']}
     />
+    <Triangle
+      color="backgroundDark"
+      height={['25vh', '20vh']}
+      width={['100vw', '100vw']}
+      invertY
+    />
 
     <ParticleBG />
   </div>
